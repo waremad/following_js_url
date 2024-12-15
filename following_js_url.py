@@ -26,6 +26,8 @@ path_w = 'output.txt'
 with open(path_w, mode='w') as f:
         f.write("")
 
+for i in range(len(ls)):
+    ls[i] = ls[i].replace('twitter', 'x')
 for i in ls:
     with open(path_w, mode='a') as f:
         f.write(i+"\n")
